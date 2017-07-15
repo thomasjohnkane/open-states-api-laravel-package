@@ -20,7 +20,7 @@ class OpenStatesApi
     /**
      * @var null
      */
-    private $key = env('OPEN_STATES_KEY');
+    private $key;
 
     /**
      * @var \GuzzleHttp\Client
@@ -34,6 +34,8 @@ class OpenStatesApi
      */
     public function __construct()
     {
+        $this->key = env('OPEN_STATES_KEY');
+
         $this->client = new Client([
             'base_uri' => 'https://openstates.org/api/v1/',
         ]);

@@ -45,6 +45,8 @@ Edit `composer.json` to reflect the package information.  At a minimum, you need
 
 ### Available Methods
 
+NOTE: http://docs.openstates.org/en/latest/api/
+
 #### Get All Bills By State (paginated)
 ```
 OpenStates::getBills('', [
